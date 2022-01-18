@@ -59,15 +59,12 @@ export default {
     handleInput: debounce(function () {
       this.loading = true;
 
-      console.log(this.searchValue);
       axios
         .get(`${API}?q=${this.searchValue}&media_type=image`)
         .then((response) => {
           this.results = response.data.collection.items;
           this.loading = false;
           this.step = 1;
-
-          console.log(response.data.collection.items);
         })
         .catch((error) => {
           console.log(error);
