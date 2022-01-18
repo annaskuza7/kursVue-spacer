@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 .outerWrapper {
   background: #f6f6f6;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
